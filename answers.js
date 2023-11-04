@@ -1,17 +1,21 @@
 ////////////////////////////////
 // Easy Going
 ////////////////////////////////
-for (a = 1; a < 21; a++) {
+{for (a = 1; a < 21; a++) {
     console.log(a)
-} /*Using a For Loop to get a list of numbers. 
+} }/*Using a For Loop to get a list of numbers. 
 Starting off with "a" being 1. Since I want 1-20, 
 I want this loop to stop running after 20. 
-I want to increase by 1 from the starting point of 1.
-
+I want to increase by 1 from the starting point of 1.*/
 
 ////////////////////////////////
 // Get Even
 ////////////////////////////////
+{for (a = 0; a < 201; a+=2) {
+    console.log(a)
+}}/*Using a For Loop to get a list of even numbers.
+Started with 0 for this one. To make sure that 200 included with this list, 
+I made sure to run it up to 201. I wanted to increase by 2, so I put a+=2. The way I read += as is the increment increase will be by 2.
 
 
 ////////////////////////////////
