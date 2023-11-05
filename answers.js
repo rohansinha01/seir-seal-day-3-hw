@@ -42,6 +42,31 @@ Didn't realize that the order matter since all three would be true, but put the 
 ////////////////////////////////
 // Wild Wild Life
 ////////////////////////////////
+const wolfy = ["Wolfy", "wolf", 16, "Yukon Territory"]
+const sharky = ["Sharky", "shark", 20, "Left Coast"]
+const plantee = ["Plantee", "plant",  5000 , "Mordor"]
+const porgee = ["Porgee", "Porg", 186, "Ahch-To"]
+const dart = ["D'Art" , "Demogorgan Dog", 2, "Upside Down"]
+
+//Plantee just had her birthday; change Plantee's array to reflect her being a year older.
+
+plantee.splice(2, 1, 5001) //The splice tool will identify the index that we need to identify, how many we need to work, and what we are changing it to.
+console.log(plantee)
+
+
+//Change Wolfy's hometown from "Yukon Territory" to "Gotham City".
+wolfy.splice(3, 1, "Gotham City") //Using the splice tool to replace the previous city, just like the first example.
+console.log(wolfy)
+
+//Give D'Art a second hometown by adding "Hawkins"
+dart.splice(3, 0, "Hawkins")// Changed the number of indeces that we need to change to 0, which lets you add an index.
+console.log(dart)
+//Porgee decides that Wolfy can't be named "Wolfy" anymore. Remove "Wolfy" from the wolfy array and replace it with "Gameboy".
+wolfy.splice(0,1, "Gameboy")// Updated the data of the name of Wolfy to Gameboy.
+console.log(wolfy)
+
+
+
 
 
 ////////////////////////////////
