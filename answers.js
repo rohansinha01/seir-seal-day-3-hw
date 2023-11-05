@@ -65,14 +65,12 @@ console.log(dart)
 wolfy.splice(0,1, "Gameboy")// Updated the data of the name of Wolfy to Gameboy.
 console.log(wolfy)
 
-
-
-
-
 ////////////////////////////////
 // Yell at the Ninja Turtles
 ////////////////////////////////
-
+const tmnt = ["Leonardo", "Donatello", "Rafael", "Michelangelo"] //Built the array of the four little turtles
+for (turtles of tmnt) //for of loop requires to have a different new name of the updated array that the loop produces get the list of the array.
+console.log(turtles.toUpperCase()) //.toUpperCase added to what we are logging makes this upper case 
 
 ////////////////////////////////
 // Methods, Revisited
