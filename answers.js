@@ -119,8 +119,7 @@ favMovies.reverse(); //This reversed the list as it was in the previous step, so
 favMovies.shift(); //This removed Guardians from the list
 
 //unshift - what does it return?
-favMovies.unshift(); // This didn't return anything different than from the previous list.
-
+favMovies.unshift(); // This would provide an addition to the start of the array.
 favMovies.unshift("Boogie Nights"); // This added Boogie Nights to the top of the list.
 
 //splice "Django Unchained" and add "Avatar" (try finding the index of "Django Unchained", instead of counting it yourself) Thought question: did this permanently alter our array?
@@ -157,15 +156,37 @@ whereIsWaldo.splice(1, 1, secondGroup); //Spliced in the new array into the old 
 console.log(whereIsWaldo);
 
 //Access and console.log "Waldo"
-const thirdGroup = whereIsWaldo.slice(2).pop() // Needed to slice out the 3rd array 
-const fourthGroup = thirdGroup.slice(1).pop() // Needed to slice out the 2nd array within the 3rd array
-const waldo = fourthGroup.pop(1) // Popped Waldo as a return
+const thirdGroup = whereIsWaldo.slice(2).pop(); // Needed to slice out the 3rd array
+const fourthGroup = thirdGroup.slice(1).pop(); // Needed to slice out the 2nd array within the 3rd array
+const waldo = fourthGroup.pop(1); // Popped Waldo as a return
 
 console.log(waldo);
 ////////////////////////////////
 //  Excited Kitten
 ////////////////////////////////
+// Write code that logs "Love me, pet me! HSSSSSS!" 20 times.
+ // We need a variable that is a random number the length of the array of responses to provide a random index of which response to provide.
+ const catNoises = ["...human...why you taking pictures of me?...", "...the catnip made me do it...", "...why does the red dot always get away..."]
+ randNum = Math.floor(Math.random() * catNoises.length)
+ randomResponse = catNoises[randNum]
+for (let a = 1; a < 21; a++) //We need the loop to run 20 times.
 
+ if (a % 2 === 0)
+
+ {
+    console.log(a, randomResponse)   // If it's an even number, print random phrase
+  }  
+  //I want to log a new random phrase every other even number
+else 
+  {
+    console.log(a, "Love me, pet me! HSSSSSS!")
+  }
+  
+
+
+
+
+// For every even number in your loop, log "...human...why you taking pictures of me?...", "...the catnip made me do it...", or "...why does the red dot always get away..." at random.
 ////////////////////////////////
 //  Find the Median
 ////////////////////////////////
