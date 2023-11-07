@@ -166,22 +166,21 @@ console.log(waldo);
 ////////////////////////////////
 // Write code that logs "Love me, pet me! HSSSSSS!" 20 times.
  // We need a variable that is a random number the length of the array of responses to provide a random index of which response to provide.
- const catNoises = ["...human...why you taking pictures of me?...", "...the catnip made me do it...", "...why does the red dot always get away..."]
- randNum = Math.floor(Math.random() * catNoises.length)
- randomResponse = catNoises[randNum]
+ let catNoises = ["...human...why you taking pictures of me?...", "...the catnip made me do it...", "...why does the red dot always get away..."]
+ 
 for (let a = 1; a < 21; a++) //We need the loop to run 20 times.
 
- if (a % 2 === 0)
+ if (a % 2 === 0) { // need to make sure we get even numbers
 
- {
-    console.log(a, randomResponse)   // If it's an even number, print random phrase
+  RandomResponse = Math.floor(Math.random() * catNoises.length); // need to generate a random number for the index
+ 
+    console.log(a, catNoises[RandomResponse]);   // Putting a in there to show for reference the odd messages. catNoises has a new response everytime.
   }  
-  //I want to log a new random phrase every other even number
 else 
   {
     console.log(a, "Love me, pet me! HSSSSSS!")
   }
-  
+  //I was overcomplicating it by trying to do two Random codes within each other, when I just needed to cut back and just use the array to my advantage.
 
 
 
