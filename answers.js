@@ -104,36 +104,40 @@ console.log(favMovies.indexOf("Titanic")); // To log the index we have to look a
 //Note: if you have to add to the array, feel free to add any movie you'd like
 
 //use the .sort method Thought question: what did this do to the array? Did it permanently alter it?
-favMovies.sort(); //This alphabatized the list and it permanently altered it.
-
+favMovies.sort; //This returned the list as it was presented to us. I originally did favMovies.sort() and that alphabatized the list, but the final prompt of this exercise made me reconsider.
+console.log(favMovies)
 //Use the method pop
-favMovies.pop(); //This took off the last item of the alphabatized list on the list "Volver"
-
+favMovies.pop(); //This took off the last item of the list which was "Fast and Furious"
+console.log(favMovies)
 //push "Guardians of the Galaxy"
-favMovies.push("Guardians of the Galaxy"); //This added Guardians to the end of the already alphabatized list.
-
+favMovies.push("Guardians of the Galaxy"); //This added Guardians to the end of the list.
+console.log(favMovies)
 //Reverse the array
 favMovies.reverse(); //This reversed the list as it was in the previous step, so Guardians is at the top of the list now.
-
+console.log(favMovies)
 //Use the shift method
 favMovies.shift(); //This removed Guardians from the list
-
+console.log(favMovies)
 //unshift - what does it return?
-favMovies.unshift(); // This would provide an addition to the start of the array.
-favMovies.unshift("Boogie Nights"); // This added Boogie Nights to the top of the list.
+
+favMovies.unshift; // This would provide an addition to the start of the array. But if we are just 
+console.log(favMovies)
+// favMovies.unshift("Boogie Nights"); // This added Boogie Nights to the top of the list.
 
 //splice "Django Unchained" and add "Avatar" (try finding the index of "Django Unchained", instead of counting it yourself) Thought question: did this permanently alter our array?
 favMovies.splice(favMovies.indexOf("Django Unchained"), 1, "Avatar"); // spliced the index of Django and removing 1 total index and adding in Avatar. This put Avatar in the Django slot of the array.
-
-//slice the last half of the array (challenge yourself and try to programatically determine the middle of the array rather than counting it and hard coding it) - Thought question: did this permanently alter our array?
-const newMovies = favMovies.slice(favMovies.length / 2); //for splices, you have to create a new array from the index that you want. I divided the array length by 2 to pick
-//store the value of your slice in a variable, console.log it - Thought question: what is going on here?
-console.log(newMovies); //This is the second half of the list.
+console.log(favMovies)
+//slice the last half of the array (challenge yourself and try to programatically determine the middle of the array rather than counting it and hard coding it) - Thought question: did this permanently alter our array? 
+const newMovies = favMovies.slice(favMovies.length / 2); //for splices, you have to create a new array from the index that you want. I divided the array length by 2 and assigned this new array a new name. Our old array is still in tact
+console.log(newMovies)
+console.log(favMovies)
+//store the value of your slice in a variable, console.log it - Thought question: what is going on here? // newMovies now holds the new array.
+// console.log(newMovies); //This is the second half of the list.
 //console.log your final results
 console.log(favMovies);
 //After running the above tasks, console.log the index of "Fast and Furious" -We removed it from the array, what value do we get when we look for the index of something that is not in the array?
-console.log(favMovies.indexOf("Fast and Furious")); // Fast and Furious wasn't taken off the list when I ran any of the previous codes.
-console.log(favMovies.indexOf("Volver")); // Volver was removed and that is giving an -1 index
+console.log(favMovies.indexOf("Fast and Furious")); // It is listed as -1 since it is not in the array anymore, it is the first item removed.
+
 //Thought question: that we declared the variable favMovies with const, and yet, we were allowed to change the array. Weird? Should we have used let?
 //Arrays allow for changes with different commands.
 
