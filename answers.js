@@ -170,6 +170,8 @@ console.log(waldo);
 ////////////////////////////////
 // Write code that logs "Love me, pet me! HSSSSSS!" 20 times.
  // We need a variable that is a random number the length of the array of responses to provide a random index of which response to provide.
+ // For every even number in your loop, log "...human...why you taking pictures of me?...", "...the catnip made me do it...", or "...why does the red dot always get away..." at random.
+
  let catNoises = ["...human...why you taking pictures of me?...", "...the catnip made me do it...", "...why does the red dot always get away..."]
  
 for (let a = 1; a < 21; a++) //We need the loop to run 20 times.
@@ -189,7 +191,6 @@ else
 
 
 
-// For every even number in your loop, log "...human...why you taking pictures of me?...", "...the catnip made me do it...", or "...why does the red dot always get away..." at random.
 ////////////////////////////////
 //  Find the Median
 /*
