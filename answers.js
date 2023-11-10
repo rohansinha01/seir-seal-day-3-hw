@@ -1,3 +1,24 @@
+/////////////////////
+//Part 1 - Videos
+/////////////////////
+
+//HTML Intro (tags, content, attributes, semantic HTML) - 5
+
+//HTML Elements (headers, navigation, lists, sections, etc.) and Media (images, audio, videos) - 5
+
+//CSS Intro (including css files in HTML, elements) - 5 
+
+//CSS Basics (colors, background, font properties) - 5 
+
+
+
+
+
+
+
+
+
+
 ////////////////////////////////
 // Easy Going
 ////////////////////////////////
